@@ -1,0 +1,334 @@
+@font-face {
+  font-family: "Constantia"; /* Имя, которое вы будете использовать в CSS */
+  src: url("ofont.ru_Constantia.woff2") format("woff2"),
+    /* Путь к файлу шрифта .woff2 */ url("ofont.ru_Constantia.woff")
+      format("woff"),
+    /* Путь к файлу шрифта .woff */ url("ofont.ru_Constantia.ttf")
+      format("truetype"); /*fallback, не рекомендуется*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Constantia", sans-serif; /* Используйте шрифт */
+}
+
+.header {
+  background-image: url("images/Acran.png");
+  max-width: 1600px;
+  height: 784px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Добавляем эту строку */
+  margin-bottom: 108px;
+}
+.main-container {
+  width: 1600px;
+  color: rgba(217, 217, 217, 0), rgba(255, 255, 255, 0),
+    rgba(218, 207, 239, 0.4), rgba(255, 255, 255, 0.44), rgba(0, 0, 0, 1),
+    rgba(0, 92, 254, 1), rgba(25, 30, 255, 1), rgba(112, 113, 159, 1),
+    rgba(180, 180, 180, 1), rgba(189, 189, 189, 1), rgba(217, 110, 155, 1),
+    rgba(220, 147, 178, 1), rgba(229, 234, 255, 1), rgba(248, 189, 218, 1),
+    rgba(249, 174, 116, 1), rgba(255, 238, 245, 1), rgba(255, 255, 255, 1),
+    rgba(231, 175, 199, 1), rgba(143, 109, 205, 1), rgba(229, 234, 255, 1),
+    rgba(249, 218, 226, 1), rgba(229, 234, 255, 1), rgba(249, 218, 226, 1),
+    rgba(229, 234, 255, 1), rgba(249, 218, 226, 1), rgba(229, 234, 255, 1),
+    rgba(249, 218, 226, 1), rgba(229, 234, 255, 1), rgba(249, 218, 226, 1),
+    rgba(229, 234, 255, 1), rgba(249, 218, 226, 1);
+}
+.nav {
+  margin-top: 30px;
+  padding: 14px 218.5px 14px 218.5px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 92px;
+}
+.menu-link {
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 1;
+  position: relative;
+}
+.menu-link:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.Tabletnica {
+  position: absolute;
+  top: -8px;
+  right: 0;
+}
+.Purple_2 {
+  left: 176px;
+  max-width: 467px;
+  position: absolute;
+  top:0;
+}
+.header-text {
+  position: absolute;
+  top: 326px;
+  left: 136px;
+}
+.header-button {
+  border-radius: 9px;
+  background: rgba(248, 189, 218, 1);
+  color: rgba(0, 0, 0, 1);
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 500;
+  border: none;
+  padding: 20px 81px 20px 81px;
+  margin-left: 205px;
+  margin-top: 520px;
+  cursor: pointer;
+}
+.burger_btn {
+  outline: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  
+}
+.burger_btn:before,
+.burger_btn i,
+.burger_btn::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+.burger_btn.active i {
+  display: none;
+}
+.burger_btn.active:before {
+  position: absolute;
+  top: 9px;
+  transform: rotate(45deg);
+}
+.burger_btn.active:after {
+  position: absolute;
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.burger_btn {
+  display: none;
+}
+.nav.active .menu {
+  display: block; /* Или block, если вы хотите, чтобы элементы меню шли друг под другом */
+  position: absolute;
+  top: 100px; /*  Регулируйте, чтобы меню не перекрывало хедер */
+  left: 320px;
+  max-width: 100%;
+  background-color: black;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  z-index: 10; /*  Убедитесь, что меню поверх других элементов */
+}
+.nav.active .menu button {
+  display: none;
+}
+.nav.active .menu li {
+  margin: 10px 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.White1 {
+  position: absolute;
+  top: 35px;
+  left: 45px;
+}
+.main-contant {
+  display: flex;
+  column-gap: 75px;
+}
+.background-img {
+  background-image: url("images/Rectangle\ 6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 560px;
+  height: 538px;
+  position: relative;
+}
+.main-text {
+  max-width: 520px;
+  height: 455px;
+  margin-top: 97px;
+}
+.main-text h2 {
+  font-family: Constantia;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.main-text span {
+  color: rgba(217, 110, 155, 1);
+}
+.main-text p {
+  font-family: Inter;
+  font-size: 29px;
+  font-weight: 400;
+  text-align: center;
+}
+.one-type {
+  margin-top: 112px;
+  font-family: Constantia;
+  font-size: 48px;
+  font-weight: 700;
+}
+.one-type span {
+  color: rgba(217, 110, 155, 1);
+}
+.Advantages_of_our_pill_boxes {
+  margin-top: 55px;
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  margin-bottom: 101px;
+}
+
+.Box1 {
+  font-family: Inter;
+  text-align: center;
+  width: 380px;
+  height: 320px;
+  background: rgba(255, 238, 245, 1);
+}
+.Box1 img {
+  margin-top: 33px;
+  margin-bottom: 28px;
+}
+.Box1 h3 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.Box1 p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 100%;
+}
+.Box1 div {
+  width: 300px;
+  height: 140px;
+  margin: 0 auto;
+}
+.Box2 {
+  font-family: Inter;
+  text-align: center;
+  width: 380px;
+  height: 320px;
+  background: rgba(229, 234, 255, 1);
+}
+.Box2 img {
+  margin-top: 31px;
+  margin-bottom: 21px;
+}
+.Box2 h3 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.Box2 p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 100%;
+}
+.Box2 div {
+  width: 333px;
+  height: 140px;
+  margin: 0 auto;
+}
+.comments{
+  position: relative;
+  display: flex;
+  column-gap: 137px;
+  margin-top: 35px;
+  margin-bottom: 87px;
+}
+.com-one {
+  width: 531px;
+  height: 354px;
+  background: linear-gradient(
+    140.74deg,
+    rgba(228.86251831054688, 233.7633056640625, 255, 1),
+    rgba(249, 218, 226, 1) 100%
+  );
+}
+.com-one div{
+margin-top: 30px;
+margin-left: 55px;
+margin-right: 57px;
+}
+.Quetos{
+display: flex;
+justify-content: space-between;
+
+}
+.com-one h3{
+font-family: Inter;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 100%;
+
+}
+.com-one img {
+margin-right: 7px;
+}
+.com-one p{
+font-family: Inter;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  margin-top: 30px;
+margin-left: 55px;
+margin-right: 50px;
+}
+.Ava{
+  position: absolute;
+  margin-top: 50px;
+  display: flex;
+   align-items: center;
+   top: 210px;
+}
+.Ava div{
+margin-left: 20px;
+margin-top: 0;
+margin-right: 0;
+}
+.Ava-info{
+  text-align: left;
+  flex-direction: column;
+}
+.Ava-info p{
+font-family: Inter;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 100%;
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left:0;
+margin-right: 0;
+}
